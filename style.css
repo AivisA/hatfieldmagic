@@ -10,7 +10,7 @@ body {
                             "last standings"
                             "foot foot";
     gap: 1.25rem;
-    background-image: url(background.jpg);
+    background-image: url(/<repository>/background.jpg/);
     background-repeat: no-repeat;
     background-position: center;
     background-size: cover;
