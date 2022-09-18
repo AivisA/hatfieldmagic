@@ -1,0 +1,179 @@
+body {
+    display: grid;
+    width: 97%;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: auto;
+    grid-template-areas:    "head head"
+                            "about about"
+                            "roster team"
+                            "next standings"
+                            "last standings"
+                            "foot foot";
+    gap: 1.25rem;
+    background-image: url(background.jpg);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    color: rgb(255, 255, 255);
+    font-size: 16px;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+.container {
+    padding: 0.625rem;
+    display: inline-flexbox;
+    flex-shrink: 1;
+}
+
+header {
+    display: inline-flex;
+    grid-area: head;
+    width: 100%;
+    align-items: center;
+    justify-content: center;
+    background-color: transparent;
+    color: rgb(213, 138, 2);
+    font-size: 1.5rem;
+    text-shadow: -1px 1px 0 rgb(0, 0, 0),
+    1px 1px 0 rgb(0, 0, 0),
+    1px -1px 0 rgb(0, 0, 0),
+    -1px -1px 0 rgb(0, 0, 0);
+}
+
+.logo {
+    height: 7.5rem;
+    width: 7.5rem;
+}
+
+.about {
+    grid-area: about;
+    text-align: center;
+}
+
+.roster {
+    grid-area: roster;
+}
+
+ul {
+    list-style: none;
+    padding-inline-start: 2.5rem;
+}
+
+.li {
+    padding-inline-start: 2.5rem;
+}
+
+.tmimg {
+    grid-area: team;
+}
+
+.team {
+    width: 100%;
+    height: auto;
+    border: 1px solid rgb(0, 0, 0);
+}
+
+.next {
+    grid-area: next;
+    padding-inline-start: 2.5rem;
+}
+
+.last {
+    grid-area: last;
+    padding-inline-start: 2.5rem;
+}
+
+.standings {
+    grid-area: standings;
+    grid-row: 4 / span 2;
+}
+
+.mstandings {
+    display: none;
+    grid-area: mstandings;
+}
+
+table, th, td {
+    border: 1px solid rgb(0, 0, 0);
+    border-spacing: 0px;
+    text-align: center;
+    background-color: rgb(169, 169, 169);
+    opacity: 0.8;
+    color: rgb(0, 0, 0);
+    font-weight: bold;
+}
+
+th, td {
+    padding: 0.3125rem;
+}
+
+table {
+    width: 100%;
+}
+
+.th {
+    font-weight: bolder;
+    background-color: rgb(0, 0, 0);
+    color: rgb(255, 255, 255);
+    border-right: 1px solid rgb(255, 255, 255);
+}
+
+#th {
+    border-right: 1px solid rgb(0, 0, 0);
+}
+
+.ttw {
+    min-width: 12.75rem;
+}
+
+.tt {
+    min-width: 1.5rem;
+}
+
+footer {
+    grid-area: foot;
+}
+
+a {
+    color: rgb(130, 255, 217);
+}
+
+a:hover {
+    cursor: pointer;
+    font-weight: bold;
+}
+
+a:active {
+    cursor: pointer;
+    font-weight: bold;
+    text-transform: uppercase;
+}
+
+a:visited {
+    color: rgb(138, 43, 226);
+}
+
+@media only screen and (max-width: 700px) {
+    body {
+        font-size: 12px;
+        grid-template-columns: 1fr;
+        grid-template-areas:    "head"
+                                "about"
+                                "team"
+                                "roster"
+                                "next"
+                                "last"
+                                "mstandings"
+                                "foot";
+    }
+
+    .standings {
+        display: none;
+    }
+
+    .mstandings {
+        grid-area: mstandings;
+        display: initial;
+    }
+
+}
