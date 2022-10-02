@@ -1,0 +1,121 @@
+body {
+    display: grid;
+    width: 98%;
+    grid-template-columns: 1fr;
+    grid-template-rows: auto;
+    grid-template-areas:    "head"
+                            "box1"
+                            "foot";
+    gap: 1.25rem;
+    background-image: url(background.jpg);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    color: rgb(255, 255, 255);
+    font-size: 16px;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+.container {
+    display: inline-flexbox;
+    flex-shrink: 1;
+}
+
+header {
+    display: inline-flex;
+    grid-area: head;
+    width: 100%;
+    align-items: center;
+    justify-content: center;
+    background-color: transparent;
+    color: rgb(213, 138, 2);
+    font-size: 1.5rem;
+    text-shadow: -1px 1px 0 rgb(0, 0, 0),
+    1px 1px 0 rgb(0, 0, 0),
+    1px -1px 0 rgb(0, 0, 0),
+    -1px -1px 0 rgb(0, 0, 0);
+}
+
+a {
+    color: rgb(213, 138, 2);
+    text-decoration: none;
+}
+
+.logo {
+    height: 7.5rem;
+    width: 7.5rem;
+}
+
+table, th, td {
+    border: 1px solid rgb(0, 0, 0);
+    border-spacing: 0px;
+    text-align: center;
+    color: rgb(0, 0, 0);
+    font-weight: bold;
+}
+
+th, td {
+    padding: 0.3125rem;
+}
+
+table {
+    width: 100%;
+}
+
+.th {
+    font-weight: bolder;
+    color: rgb(255, 255, 255);
+    border-right: 1px solid rgb(255, 255, 255);
+    background-color: rgb(110, 110, 110);
+}
+
+tr {
+    background-color: rgb(169, 169, 169);
+}
+
+.boxscore1 {
+    grid-area: box1;
+    overflow-x: auto;
+}
+
+.player {
+    background-color: rgb(169, 169, 169);
+    width: auto;
+    min-width: 150px;
+    position: sticky;
+    left: 0;
+    z-index: 2;
+    opacity: 1;
+}
+
+.player2 {
+    background-color: rgb(110, 110, 110);
+    width: auto;
+    min-width: 9.625rem;
+    position: sticky;
+    left: 0;
+    z-index: 2;
+    opacity: 1;
+}
+
+.statmain, .statsub {
+    width: 4%;
+}
+
+.statsub {
+    font-size: 0.9rem;
+}
+
+footer {
+    grid-area: foot;
+}
+
+@media only screen and (max-width: 700px) {
+    body {
+        font-size: 12px;
+        grid-template-columns: 1fr;
+        grid-template-areas:    "head"
+                                "box1"
+                                "foot";
+    }
+}
