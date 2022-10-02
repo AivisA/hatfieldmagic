@@ -19,7 +19,6 @@ body {
 .container {
     display: inline-flexbox;
     flex-shrink: 1;
-    min-height: 100vh;
 }
 
 header {
@@ -77,6 +76,7 @@ tr {
 .boxscore1 {
     grid-area: box1;
     overflow-x: auto;
+    min-height: 100vh;
 }
 
 .player {
