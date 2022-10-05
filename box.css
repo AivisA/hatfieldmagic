@@ -4,6 +4,7 @@ body {
     grid-template-columns: 1fr;
     grid-template-rows: auto;
     grid-template-areas:    "head"
+                            "comp1"
                             "box1"
                             "foot";
     gap: 1.25rem;
@@ -76,7 +77,12 @@ tr {
 .boxscore1 {
     grid-area: box1;
     overflow-x: auto;
-    min-height: 100vh;
+}
+
+.teamcomp {
+    grid-area: comp1;
+    margin-bottom: 2rem;
+    max-width: 50rem;
 }
 
 .player {
@@ -116,6 +122,7 @@ footer {
         font-size: 12px;
         grid-template-columns: 1fr;
         grid-template-areas:    "head"
+                                "comp1"
                                 "box1"
                                 "foot";
     }
