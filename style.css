@@ -53,6 +53,7 @@ header {
 
 .roster {
     grid-area: roster;
+    line-height: 145%;
 }
 
 ul {
@@ -149,12 +150,16 @@ a {
     color: rgb(130, 255, 217);
 }
 
-a:hover {
+.link2 {
+    color: rgb(255, 255, 255);
+}
+
+a:hover, .link2:hover {
     cursor: pointer;
     font-weight: bold;
 }
 
-a:active {
+a:active, .link2:active {
     cursor: pointer;
     font-weight: bold;
     text-transform: uppercase;
