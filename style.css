@@ -152,11 +152,13 @@ footer {
 
 .link2 {
     color: rgb(255, 255, 255);
+    text-decoration: none;
 }
 
 .link:hover, .link2:hover {
     cursor: pointer;
     font-weight: bold;
+    text-decoration: underline;
 }
 
 .link:active, .link2:active {
