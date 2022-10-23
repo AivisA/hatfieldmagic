@@ -194,5 +194,7 @@ footer {
         grid-area: mstandings;
         display: initial;
     }
-
+    
+    .link2 {
+        text-decoration: underline;
 }
