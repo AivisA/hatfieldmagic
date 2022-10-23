@@ -131,6 +131,21 @@ tr {
     font-size: 0.9rem;
 }
 
+.link2 {
+    color: rgb(0, 0, 0);
+}
+
+.link2:hover {
+    cursor: pointer;
+    font-weight: bold;
+}
+
+.link2:active {
+    cursor: pointer;
+    font-weight: bold;
+    text-transform: uppercase;
+}
+
 footer {
     grid-area: foot;
 }
