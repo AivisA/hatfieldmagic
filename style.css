@@ -8,6 +8,7 @@ body {
                             "roster team"
                             "next standings"
                             "last standings"
+                            "fixture fixture"
                             "foot foot";
     gap: 1.25rem;
     background-image: url(https://images.unsplash.com/photo-1590227632180-80a3bf110871?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxzZWFyY2h8Nnx8YmFza2V0YmFsbHxlbnwwfHwwfHw%3D&auto=format&fit=crop&w=500&q=60);
@@ -91,6 +92,16 @@ ul {
 .mstandings {
     display: none;
     grid-area: mstandings;
+}
+
+.fixture {
+    grid-area: fixture;
+    line-height: 150%;
+    padding-inline-start: 2.5rem;
+}
+
+#fixlist {
+    padding-inline-start: 0;
 }
 
 table, th, td {
