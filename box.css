@@ -74,6 +74,10 @@ table {
     background-color: rgb(110, 110, 110);
 }
 
+.th:hover {
+    cursor: pointer;
+}
+
 tr {
     background-color: rgb(169, 169, 169);
 }
@@ -89,20 +93,6 @@ tr {
     max-width: 50rem;
 }
 
-.player0 {
-    background-color: rgb(209, 209, 209);
-    width: auto;
-    min-width: 150px;
-    position: sticky;
-    left: 0;
-    z-index: 2;
-    opacity: 1;
-}
-
-.data0 {
-    background-color: rgb(209, 209, 209);
-}
-
 .player1 {
     background-color: rgb(169, 169, 169);
     width: auto;
@@ -113,6 +103,28 @@ tr {
     opacity: 1;
 }
 
+.sorta tbody tr:nth-child(even) {
+    background-color: rgb(169, 169, 169);
+}
+
+.player0 {
+    background-color: rgb(219, 219, 219);
+    width: auto;
+    min-width: 150px;
+    position: sticky;
+    left: 0;
+    z-index: 2;
+    opacity: 1;
+}
+
+.sorta tbody tr:nth-child(odd) {
+    background-color: rgb(219, 219, 219);
+}
+
+.data0 {
+    background-color: rgb(219, 219, 219);
+}
+
 .player2 {
     background-color: rgb(110, 110, 110);
     width: auto;
@@ -121,6 +133,10 @@ tr {
     left: 0;
     z-index: 2;
     opacity: 1;
+}
+
+.breakline {
+    background-color: rgb(0, 0, 0);
 }
 
 .statmain, .statsub {
@@ -144,10 +160,6 @@ tr {
     cursor: pointer;
     font-weight: bold;
     text-transform: uppercase;
-}
-
-.breakline {
-    background-color: rgb(0, 0, 0);
 }
 
 footer {
