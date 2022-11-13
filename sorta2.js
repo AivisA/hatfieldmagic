@@ -190,7 +190,5 @@ var createTable = function (target, data, css) {
 
     // (F) ADD CSS CLASS + ATTACH CLICK TO SORT
   target.classList.add("sorta");
-  for (let r of instance.head.rows) { for (let c of r.cells) {
-    c.onclick = () => { instance.sort(c); };
-  }}
+  
   };
