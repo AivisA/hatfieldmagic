@@ -167,4 +167,8 @@ footer {
                                 "box1"
                                 "foot";
     }
+    
+    .statmain, .statsub {
+        min-width: 4rem;
+    }
 }
