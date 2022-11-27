@@ -7,7 +7,6 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Average stats</title>
     <link href="box.css" rel="stylesheet">
-    <script src="sorta2.js"></script>
 </head>
 
 <body>
@@ -22,57 +21,57 @@
 
             <thead>
             <tr class="th">
-                <th class="player2">Player</th>
-                <th class="statmain" title="Games Played">GP</th>
-                <th class="statmain" title="Minutes">Min</th>
-                <th class="statmain" title="Points">Pts</th>
-                <th class="statsub" title="2 Point Shots Made">2PM</th>
-                <th class="statsub" title="2 Point Shots Attempted">2PA</th>
-                <th class="statmain" title="2 Point Shot %">2P%</th>
-                <th class="statsub" title="3 Point Shots Made">3PM</th>
-                <th class="statsub" title="3 Point Shots Attempted">3PA</th>
-                <th class="statmain" title="3 Point Shot %">3P%</th>
-                <th class="statsub" title="Free Throws Made">FTM</th>
-                <th class="statsub" title="Free Throws Attempted">FTA</th>
-                <th class="statmain" title="Free Throw %">FT%</th>
-                <th class="statsub" title="Offensive Rebounds">OReb</th>
-                <th class="statsub" title="Defensive Rebounds">DReb</th>
-                <th class="statmain" title="Total Rebounds">Reb</th>
-                <th class="statmain" title="Assists">Ast</th>
-                <th class="statmain" title="Steals">Stl</th>
-                <th class="statmain" title="Blocks">Blk</th>
-                <th class="statmain" title="Turnovers">Tov</th>
-                <th class="statmain" title="Personal Fouls">PF</th>
-                <th class="statmain" title="Personal Fouls Drawn">FD</th>
-                <th class="statmain">+/-</th>
+                <th class="player2" onclick="sortTableText(0)">Player</th>
+                <th class="statmain" title="Games Played" onclick="sortTable(1)">GP</th>
+                <th class="statmain" title="Minutes" onclick="sortTableText(2)">Min</th>
+                <th class="statmain" title="Points" onclick="sortTable(3)">Pts</th>
+                <th class="statsub" title="2 Point Shots Made" onclick="sortTable(4)">2PM</th>
+                <th class="statsub" title="2 Point Shots Attempted" onclick="sortTable(5)">2PA</th>
+                <th class="statmain" title="2 Point Shot %" onclick="sortTable(6)">2P%</th>
+                <th class="statsub" title="3 Point Shots Made" onclick="sortTable(7)">3PM</th>
+                <th class="statsub" title="3 Point Shots Attempted" onclick="sortTable(8)">3PA</th>
+                <th class="statmain" title="3 Point Shot %" onclick="sortTable(9)">3P%</th>
+                <th class="statsub" title="Free Throws Made" onclick="sortTable(10)">FTM</th>
+                <th class="statsub" title="Free Throws Attempted" onclick="sortTable(11)">FTA</th>
+                <th class="statmain" title="Free Throw %" onclick="sortTable(12)">FT%</th>
+                <th class="statsub" title="Offensive Rebounds" onclick="sortTable(13)">OReb</th>
+                <th class="statsub" title="Defensive Rebounds" onclick="sortTable(14)">DReb</th>
+                <th class="statmain" title="Total Rebounds" onclick="sortTable(15)">Reb</th>
+                <th class="statmain" title="Assists" onclick="sortTable(16)">Ast</th>
+                <th class="statmain" title="Steals" onclick="sortTable(17)">Stl</th>
+                <th class="statmain" title="Blocks" onclick="sortTable(18)">Blk</th>
+                <th class="statmain" title="Turnovers" onclick="sortTable(19)">Tov</th>
+                <th class="statmain" title="Personal Fouls" onclick="sortTable(20)">PF</th>
+                <th class="statmain" title="Personal Fouls Drawn" onclick="sortTable(21)">FD</th>
+                <th class="statmain" onclick="sortTable(22)">+/-</th>
             </tr>
             </thead>
 
             <tbody>
             <tr>
-                <td class="player0"><a class="link2" href="janis.html" target="_blank">Janis Slisans</a></td>
-                <td class="data0">6</td>
-                <td class="data0">21:45</td>
-                <td class="data0">10.5</td>
-                <td class="statsub data0">2.3</td>
-                <td class="statsub data0">4.8</td>
-                <td class="data0">48.3</td>
-                <td class="statsub data0">1.2</td>
-                <td class="statsub data0">5.2</td>
-                <td class="data0">22.6</td>
-                <td class="statsub data0">2.3</td>
-                <td class="statsub data0">3.0</td>
-                <td class="data0">77.8</td>
-                <td class="statsub data0">0.8</td>
-                <td class="statsub data0">2.0</td>
-                <td class="data0">2.8</td>
-                <td class="data0">1.8</td>
-                <td class="data0">1.7</td>
-                <td class="data0">0.3</td>
-                <td class="data0">4.8</td>
-                <td class="data0">1.8</td>
-                <td class="data0">2.2</td>
-                <td class="data0">-4.0</td>
+                <td class="player1"><a class="link2" href="janis.html" target="_blank">Janis Slisans</a></td>
+                <td>6</td>
+                <td>21:45</td>
+                <td>10.5</td>
+                <td class="statsub">2.3</td>
+                <td class="statsub">4.8</td>
+                <td>48.3</td>
+                <td class="statsub">1.2</td>
+                <td class="statsub">5.2</td>
+                <td>22.6</td>
+                <td class="statsub">2.3</td>
+                <td class="statsub">3.0</td>
+                <td>77.8</td>
+                <td class="statsub">0.8</td>
+                <td class="statsub">2.0</td>
+                <td>2.8</td>
+                <td>1.8</td>
+                <td>1.7</td>
+                <td>0.3</td>
+                <td>4.8</td>
+                <td>1.8</td>
+                <td>2.2</td>
+                <td>-4.0</td>
             </tr>
 
             <tr>
@@ -102,29 +101,29 @@
             </tr>
 
             <tr>
-                <td class="player0"><a class="link2" href="habs.html" target="_blank">Habib Husain</a></td>
-                <td class="data0">7</td>
-                <td class="data0">13:39</td>
-                <td class="data0">2.7</td>
-                <td class="statsub data0">0.7</td>
-                <td class="statsub data0">3.4</td>
-                <td class="data0">20.8</td>
-                <td class="statsub data0">0.1</td>
-                <td class="statsub data0">1.7</td>
-                <td class="data0">8.3</td>
-                <td class="statsub data0">0.9</td>
-                <td class="statsub data0">2.0</td>
-                <td class="data0">42.9</td>
-                <td class="statsub data0">0.7</td>
-                <td class="statsub data0">0.9</td>
-                <td class="data0">1.6</td>
-                <td class="data0">1.6</td>
-                <td class="data0">0.9</td>
-                <td class="data0">0.0</td>
-                <td class="data0">2.7</td>
-                <td class="data0">0.6</td>
-                <td class="data0">1.4</td>
-                <td class="data0">-3.0</td>
+                <td class="player1"><a class="link2" href="habs.html" target="_blank">Habib Husain</a></td>
+                <td>7</td>
+                <td>13:39</td>
+                <td>2.7</td>
+                <td class="statsub">0.7</td>
+                <td class="statsub">3.4</td>
+                <td>20.8</td>
+                <td class="statsub">0.1</td>
+                <td class="statsub">1.7</td>
+                <td>8.3</td>
+                <td class="statsub">0.9</td>
+                <td class="statsub">2.0</td>
+                <td>42.9</td>
+                <td class="statsub">0.7</td>
+                <td class="statsub">0.9</td>
+                <td>1.6</td>
+                <td>1.6</td>
+                <td>0.9</td>
+                <td>0.0</td>
+                <td>2.7</td>
+                <td>0.6</td>
+                <td>1.4</td>
+                <td>-3.0</td>
             </tr>
 
             <tr>
@@ -154,29 +153,29 @@
             </tr>
 
             <tr>
-                <td class="player0"><a class="link2" href="jon.html" target="_blank">Jon Ord</a></td>
-                <td class="data0">7</td>
-                <td class="data0">09:01</td>
-                <td class="data0">2.9</td>
-                <td class="statsub data0">0.3</td>
-                <td class="statsub data0">1.0</td>
-                <td class="data0">28.6</td>
-                <td class="statsub data0">0.7</td>
-                <td class="statsub data0">1.6</td>
-                <td class="data0">45.5</td>
-                <td class="statsub data0">0.1</td>
-                <td class="statsub data0">0.1</td>
-                <td class="data0">100</td>
-                <td class="statsub data0">0.7</td>
-                <td class="statsub data0">0.6</td>
-                <td class="data0">1.3</td>
-                <td class="data0">0.9</td>
-                <td class="data0">0.3</td>
-                <td class="data0">0.0</td>
-                <td class="data0">0.1</td>
-                <td class="data0">0.4</td>
-                <td class="data0">0.1</td>
-                <td class="data0">-0.4</td>
+                <td class="player1"><a class="link2" href="jon.html" target="_blank">Jon Ord</a></td>
+                <td>7</td>
+                <td>09:01</td>
+                <td>2.9</td>
+                <td class="statsub">0.3</td>
+                <td class="statsub">1.0</td>
+                <td>28.6</td>
+                <td class="statsub">0.7</td>
+                <td class="statsub">1.6</td>
+                <td>45.5</td>
+                <td class="statsub">0.1</td>
+                <td class="statsub">0.1</td>
+                <td>100</td>
+                <td class="statsub">0.7</td>
+                <td class="statsub">0.6</td>
+                <td>1.3</td>
+                <td>0.9</td>
+                <td>0.3</td>
+                <td>0.0</td>
+                <td>0.1</td>
+                <td>0.4</td>
+                <td>0.1</td>
+                <td>-0.4</td>
             </tr>
 
             <tr>
@@ -206,29 +205,29 @@
             </tr>
 
             <tr>
-                <td class="player0"><a class="link2" href="aivis.html" target="_blank">Aivis Asaritis</a></td>
-                <td class="data0">7</td>
-                <td class="data0">24:07</td>
-                <td class="data0">16.4</td>
-                <td class="statsub data0">3.9</td>
-                <td class="statsub data0">9.3</td>
-                <td class="data0">41.5</td>
-                <td class="statsub data0">2.1</td>
-                <td class="statsub data0">7.7</td>
-                <td class="data0">27.8</td>
-                <td class="statsub data0">2.3</td>
-                <td class="statsub data0">4.0</td>
-                <td class="data0">57.1</td>
-                <td class="statsub data0">2.6</td>
-                <td class="statsub data0">8.0</td>
-                <td class="data0">10.6</td>
-                <td class="data0">3.7</td>
-                <td class="data0">3.1</td>
-                <td class="data0">1.3</td>
-                <td class="data0">2.9</td>
-                <td class="data0">2.1</td>
-                <td class="data0">4.1</td>
-                <td class="data0">-3.9</td>
+                <td class="player1"><a class="link2" href="aivis.html" target="_blank">Aivis Asaritis</a></td>
+                <td>7</td>
+                <td>24:07</td>
+                <td>16.4</td>
+                <td class="statsub">3.9</td>
+                <td class="statsub">9.3</td>
+                <td>41.5</td>
+                <td class="statsub">2.1</td>
+                <td class="statsub">7.7</td>
+                <td>27.8</td>
+                <td class="statsub">2.3</td>
+                <td class="statsub">4.0</td>
+                <td>57.1</td>
+                <td class="statsub">2.6</td>
+                <td class="statsub">8.0</td>
+                <td>10.6</td>
+                <td>3.7</td>
+                <td>3.1</td>
+                <td>1.3</td>
+                <td>2.9</td>
+                <td>2.1</td>
+                <td>4.1</td>
+                <td>-3.9</td>
             </tr>
 
             <tr>
@@ -258,29 +257,29 @@
             </tr>
 
             <tr>
-                <td class="player0"><a class="link2" href="joel.html" target="_blank">Joel Avila</a></td>
-                <td class="data0">6</td>
-                <td class="data0">27:54</td>
-                <td class="data0">7.2</td>
-                <td class="statsub data0">2.8</td>
-                <td class="statsub data0">7.3</td>
-                <td class="data0">38.6</td>
-                <td class="statsub data0">0.0</td>
-                <td class="statsub data0">0.0</td>
-                <td class="data0">0.0</td>
-                <td class="statsub data0">1.5</td>
-                <td class="statsub data0">2.3</td>
-                <td class="data0">64.3</td>
-                <td class="statsub data0">3.3</td>
-                <td class="statsub data0">5.8</td>
-                <td class="data0">9.2</td>
-                <td class="data0">1.5</td>
-                <td class="data0">1.0</td>
-                <td class="data0">0.0</td>
-                <td class="data0">2.7</td>
-                <td class="data0">2.0</td>
-                <td class="data0">1.8</td>
-                <td class="data0">-4.3</td>
+                <td class="player1"><a class="link2" href="joel.html" target="_blank">Joel Avila</a></td>
+                <td>6</td>
+                <td>27:54</td>
+                <td>7.2</td>
+                <td class="statsub">2.8</td>
+                <td class="statsub">7.3</td>
+                <td>38.6</td>
+                <td class="statsub">0.0</td>
+                <td class="statsub">0.0</td>
+                <td>0.0</td>
+                <td class="statsub">1.5</td>
+                <td class="statsub">2.3</td>
+                <td>64.3</td>
+                <td class="statsub">3.3</td>
+                <td class="statsub">5.8</td>
+                <td>9.2</td>
+                <td>1.5</td>
+                <td>1.0</td>
+                <td>0.0</td>
+                <td>2.7</td>
+                <td>2.0</td>
+                <td>1.8</td>
+                <td>-4.3</td>
             </tr>
 
             <tr>
@@ -310,29 +309,29 @@
             </tr>
 
             <tr>
-                <td class="player0"><a class="link2" href="denis.html" target="_blank">Denis Jefisov</a></td>
-                <td class="data0">7</td>
-                <td class="data0">25:33</td>
-                <td class="data0">14.9</td>
-                <td class="statsub data0">5.9</td>
-                <td class="statsub data0">12.6</td>
-                <td class="data0">46.6</td>
-                <td class="statsub data0">0.0</td>
-                <td class="statsub data0">0.1</td>
-                <td class="data0">0.0</td>
-                <td class="statsub data0">3.1</td>
-                <td class="statsub data0">5.6</td>
-                <td class="data0">56.4</td>
-                <td class="statsub data0">3.0</td>
-                <td class="statsub data0">3.4</td>
-                <td class="data0">6.4</td>
-                <td class="data0">0.9</td>
-                <td class="data0">0.4</td>
-                <td class="data0">0.1</td>
-                <td class="data0">3.9</td>
-                <td class="data0">2.3</td>
-                <td class="data0">4.3</td>
-                <td class="data0">-1.1</td>
+                <td class="player1"><a class="link2" href="denis.html" target="_blank">Denis Jefisov</a></td>
+                <td>7</td>
+                <td>25:33</td>
+                <td>14.9</td>
+                <td class="statsub">5.9</td>
+                <td class="statsub">12.6</td>
+                <td>46.6</td>
+                <td class="statsub">0.0</td>
+                <td class="statsub">0.1</td>
+                <td>0.0</td>
+                <td class="statsub">3.1</td>
+                <td class="statsub">5.6</td>
+                <td>56.4</td>
+                <td class="statsub">3.0</td>
+                <td class="statsub">3.4</td>
+                <td>6.4</td>
+                <td>0.9</td>
+                <td>0.4</td>
+                <td>0.1</td>
+                <td>3.9</td>
+                <td>2.3</td>
+                <td>4.3</td>
+                <td>-1.1</td>
             </tr>
 
             <tr>
@@ -362,29 +361,29 @@
             </tr>
 
             <tr>
-                <td class="player0"><a class="link2" href="mattb.html" target="_blank">Matt Basi</a></td>
-                <td class="data0">7</td>
-                <td class="data0">23:19</td>
-                <td class="data0">3.6</td>
-                <td class="statsub data0">1.3</td>
-                <td class="statsub data0">4.4</td>
-                <td class="data0">29.0</td>
-                <td class="statsub data0">0.0</td>
-                <td class="statsub data0">0.0</td>
-                <td class="data0">0.0</td>
-                <td class="statsub data0">1.0</td>
-                <td class="statsub data0">2.3</td>
-                <td class="data0">43.8</td>
-                <td class="statsub data0">2.0</td>
-                <td class="statsub data0">4.4</td>
-                <td class="data0">6.4</td>
-                <td class="data0">2.4</td>
-                <td class="data0">0.9</td>
-                <td class="data0">0.1</td>
-                <td class="data0">3.4</td>
-                <td class="data0">2.1</td>
-                <td class="data0">2.1</td>
-                <td class="data0">-11.1</td>
+                <td class="player1"><a class="link2" href="mattb.html" target="_blank">Matt Basi</a></td>
+                <td>7</td>
+                <td>23:19</td>
+                <td>3.6</td>
+                <td class="statsub">1.3</td>
+                <td class="statsub">4.4</td>
+                <td>29.0</td>
+                <td class="statsub">0.0</td>
+                <td class="statsub">0.0</td>
+                <td>0.0</td>
+                <td class="statsub">1.0</td>
+                <td class="statsub">2.3</td>
+                <td>43.8</td>
+                <td class="statsub">2.0</td>
+                <td class="statsub">4.4</td>
+                <td>6.4</td>
+                <td>2.4</td>
+                <td>0.9</td>
+                <td>0.1</td>
+                <td>3.4</td>
+                <td>2.1</td>
+                <td>2.1</td>
+                <td>-11.1</td>
             </tr>
 
             <tr>
@@ -414,29 +413,29 @@
             </tr>
 
             <tr>
-                <td class="player0"><a class="link2" href="yannis.html" target="_blank">Yannis Aivalakis</a></td>
-                <td class="data0">2</td>
-                <td class="data0">11:33</td>
-                <td class="data0">1.0</td>
-                <td class="statsub data0">0.5</td>
-                <td class="statsub data0">2.0</td>
-                <td class="data0">25.0</td>
-                <td class="statsub data0">0.0</td>
-                <td class="statsub data0">0.0</td>
-                <td class="data0">0.0</td>
-                <td class="statsub data0">0.0</td>
-                <td class="statsub data0">0.0</td>
-                <td class="data0">0.0</td>
-                <td class="statsub data0">1.5</td>
-                <td class="statsub data0">1.5</td>
-                <td class="data0">3.0</td>
-                <td class="data0">0.5</td>
-                <td class="data0">0.0</td>
-                <td class="data0">0.0</td>
-                <td class="data0">0.5</td>
-                <td class="data0">1.0</td>
-                <td class="data0">0.0</td>
-                <td class="data0">-5.5</td>
+                <td class="player1"><a class="link2" href="yannis.html" target="_blank">Yannis Aivalakis</a></td>
+                <td>2</td>
+                <td>11:33</td>
+                <td>1.0</td>
+                <td class="statsub">0.5</td>
+                <td class="statsub">2.0</td>
+                <td>25.0</td>
+                <td class="statsub">0.0</td>
+                <td class="statsub">0.0</td>
+                <td>0.0</td>
+                <td class="statsub">0.0</td>
+                <td class="statsub">0.0</td>
+                <td>0.0</td>
+                <td class="statsub">1.5</td>
+                <td class="statsub">1.5</td>
+                <td>3.0</td>
+                <td>0.5</td>
+                <td>0.0</td>
+                <td>0.0</td>
+                <td>0.5</td>
+                <td>1.0</td>
+                <td>0.0</td>
+                <td>-5.5</td>
             </tr>
 
             <tr>
@@ -468,8 +467,118 @@
         </table>
 
         <script>
-        createTable(document.getElementById("myTable"));
-        </script>
+            function sortTable(n) {
+              var table, rows, switching, i, x, y, shouldSwitch, dir, switchcount = 0;
+              table = document.getElementById("myTable");
+              switching = true;
+              //Set the sorting direction to ascending:
+              dir = "asc"; 
+              /*Make a loop that will continue until
+              no switching has been done:*/
+              while (switching) {
+                //start by saying: no switching is done:
+                switching = false;
+                rows = table.rows;
+                /*Loop through all table rows (except the
+                first, which contains table headers):*/
+                for (i = 1; i < (rows.length - 1); i++) {
+                  //start by saying there should be no switching:
+                  shouldSwitch = false;
+                  /*Get the two elements you want to compare,
+                  one from current row and one from the next:*/
+                  x = rows[i].getElementsByTagName("TD")[n];
+                  y = rows[i + 1].getElementsByTagName("TD")[n];
+                  /*check if the two rows should switch place,
+                  based on the direction, asc or desc:*/
+                  if (dir == "asc") {
+                    if (Number(x.innerHTML) > Number(y.innerHTML)) {
+                      //if so, mark as a switch and break the loop:
+                      shouldSwitch= true;
+                      break;
+                    }
+                  } else if (dir == "desc") {
+                    if (Number(x.innerHTML) < Number(y.innerHTML)) {
+                      //if so, mark as a switch and break the loop:
+                      shouldSwitch = true;
+                      break;
+                    }
+                  }
+                }
+                if (shouldSwitch) {
+                  /*If a switch has been marked, make the switch
+                  and mark that a switch has been done:*/
+                  rows[i].parentNode.insertBefore(rows[i + 1], rows[i]);
+                  switching = true;
+                  //Each time a switch is done, increase this count by 1:
+                  switchcount ++;      
+                } else {
+                  /*If no switching has been done AND the direction is "asc",
+                  set the direction to "desc" and run the while loop again.*/
+                  if (switchcount == 0 && dir == "asc") {
+                    dir = "desc";
+                    switching = true;
+                  }
+                }
+              }
+            }
+            </script>
+
+<script>
+    function sortTableText(n) {
+      var table, rows, switching, i, x, y, shouldSwitch, dir, switchcount = 0;
+      table = document.getElementById("myTable");
+      switching = true;
+      //Set the sorting direction to ascending:
+      dir = "asc"; 
+      /*Make a loop that will continue until
+      no switching has been done:*/
+      while (switching) {
+        //start by saying: no switching is done:
+        switching = false;
+        rows = table.rows;
+        /*Loop through all table rows (except the
+        first, which contains table headers):*/
+        for (i = 1; i < (rows.length - 1); i++) {
+          //start by saying there should be no switching:
+          shouldSwitch = false;
+          /*Get the two elements you want to compare,
+          one from current row and one from the next:*/
+          x = rows[i].getElementsByTagName("TD")[n];
+          y = rows[i + 1].getElementsByTagName("TD")[n];
+          /*check if the two rows should switch place,
+          based on the direction, asc or desc:*/
+          if (dir == "asc") {
+            if (x.innerHTML.toLowerCase() > y.innerHTML.toLowerCase()) {
+              //if so, mark as a switch and break the loop:
+              shouldSwitch= true;
+              break;
+            }
+          } else if (dir == "desc") {
+            if (x.innerHTML.toLowerCase() < y.innerHTML.toLowerCase()) {
+              //if so, mark as a switch and break the loop:
+              shouldSwitch = true;
+              break;
+            }
+          }
+        }
+        if (shouldSwitch) {
+          /*If a switch has been marked, make the switch
+          and mark that a switch has been done:*/
+          rows[i].parentNode.insertBefore(rows[i + 1], rows[i]);
+          switching = true;
+          //Each time a switch is done, increase this count by 1:
+          switchcount ++;      
+        } else {
+          /*If no switching has been done AND the direction is "asc",
+          set the direction to "desc" and run the while loop again.*/
+          if (switchcount == 0 && dir == "asc") {
+            dir = "desc";
+            switching = true;
+          }
+        }
+      }
+    }
+    </script>
         
     </div>
 
